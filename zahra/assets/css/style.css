@@ -1,0 +1,78 @@
+@import "solid.css";
+@import "solid.min.css";
+@import "fontawesome.css";
+@import "all.css";
+
+body{
+    direction:ltr;
+    margin:0;
+}
+ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a {
+    text-decoration:none;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+
+}
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.container-full{
+    max-width: 100%;
+    margin:0;
+}
+.container{
+    max-width: 1350px;
+    margin: 0 auto;
+}
+#top-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1px #f6f6f6;
+    border-top: solid 1px #f6f6f6;
+    padding: 20px 0 20px 0;
+}
+#top-header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#top-header ul li {
+    margin: 0;
+}
+#top-header ul li a{
+    border-left: solid 1px #f6f6f6;
+    border-right: solid 1px #f6f6f6;
+    padding: 20px 20px 20px 20px;
+    color: #999;
+}
+#top-header ul li a:hover{
+    color: #000;
+}
+#top-header .right span{
+    border: solid #000 2px;
+    padding: 1px 10px;
+    color: #000;
+    margin-left: 12px;
+}
+#bottom-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#bottom-header .menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-gap: 10px;
+}
