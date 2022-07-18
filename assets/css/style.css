@@ -458,6 +458,7 @@ html{
 }
 #footer .left .box h1{
     letter-spacing:0.2rem;
+    color:#000;
     margin-bottom:35px;
     font-weight:600;
 }
