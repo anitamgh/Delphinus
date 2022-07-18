@@ -399,3 +399,151 @@ html{
 #sixth-section .bottom{
     margin:12rem 0 9rem 0;
 }
+#seventh-section{
+    background-color:#f6f6f6;
+    padding:85px 0;
+}
+#seventh-section li{
+    padding:44px 160px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 5%);
+    background-color:#fff;
+    overflow:hidden;
+    text-align:center;
+    position:relative;
+    width:539.78px;
+    height:150.3px;
+}
+#seventh-section li h1{
+    color:#000;
+    font-size:2.5rem;
+    letter-spacing:0.2rem;
+    position:absolute;
+    transition:all .2s;
+    transform:translateY(0);
+}
+#seventh-section li:hover h1{
+    transform:translate(0,-100%);
+    /* I literally have no clue what I'm doing */
+    bottom:-105px;
+}
+#seventh-section ul li p{
+    color:#999;
+    font-size:16px;
+    margin-bottom:3rem;
+    position:absolute;
+    top:-35px;
+    left:200px;
+    transition:all 0.3s;
+}
+#seventh-section ul li:hover p{
+    top:50%;
+    left:50%;
+    transform:translate(-50% , -50%);
+}
+#footer{
+    padding-bottom:60px;
+}
+#footer .left{
+    width:67%;
+    padding:82px 80px 40px 80px;
+}
+#footer .left .list{
+   width:30%;
+}
+#footer .left .box2{
+    margin-left:-5rem;
+}
+#footer .left .box3{
+    width:40%;
+}
+#footer .left .box h1{
+    letter-spacing:0.2rem;
+    margin-bottom:35px;
+    font-weight:600;
+}
+#footer .left .list h3{
+    color:#666;
+    margin:2rem 0;
+    font-size:1.6rem;
+    font-weight:100
+}
+#footer .left .list h3:hover{
+    color:#333;
+}
+#footer .left form{
+    margin-bottom:6rem;
+    position:relative;
+}
+#footer .left form input{
+    font-size:1.4rem;
+    padding:10px 150px 10px 0;
+    color:#666;
+    border:none;
+    border-bottom:2px solid #000;
+}
+#footer .left form button{
+    border:none;
+    background: none;
+    position:absolute;
+    top:50%;
+    right:10px;
+    transform:translateY(-50%);
+    color:#666;
+}
+#footer .left .icons{
+    margin-bottom:3rem;
+}
+#footer .left .icons li{
+    display:inline-block;
+}
+#footer .left .icons li a{
+    color:#000;
+    padding-right:42px;
+    font-size:1.3rem;
+}
+#footer .left .icons li a:hover{
+    color:#333;
+}
+#footer .left p.big{
+    text-align:center;
+    color:#666;
+    font-size:1.5rem;
+    letter-spacing:0.1rem;
+}
+#footer .left p.big span{
+    color:#333;
+}
+#footer .left p.small{
+    text-align:center;
+    color:#333;
+    font-size:1.3rem;
+    letter-spacing:0.1rem;
+}
+#footer .right{
+    width:33%;
+    overflow: hidden;
+}
+#footer .right .content{
+    width:100%;
+    transform: scale(1.25);
+    background-image:url("../images/the-story.jpg");
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:406px;
+    padding: 85px 106px;
+    color: #fff;
+    line-height:2.5rem;
+    letter-spacing:0.1rem;
+}
+#footer .right .content h1{
+    font-size:1.7rem;
+}
+#footer .right .content p{
+    font-size:1.2rem;
+    visibility:hidden;
+    /* transition:all 1s; */
+}
+#footer .right:hover .content p{
+    visibility:visible;
+}
