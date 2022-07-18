@@ -230,6 +230,7 @@ html{
 }
 #third-section ul li a .content .hidden p{
     display:none;
+    /* transition:all 1s; */
 }
 #third-section ul li:hover a .content .hidden p{
     display:block;
@@ -269,6 +270,7 @@ html{
 #fourth-section ul li .right .price{
     color:#000;
     font-size:1.5rem;
+    font-weight:600;
 }
 #fourth-section ul li .right .stars{
     justify-content:flex-start;
@@ -277,7 +279,7 @@ html{
     margin-right:5px;
 }
 #fourth-section ul li .right .stars span a{
-    color:#666;
+    color:#c6c6c6;
 }
 #fourth-section ul li .right .stars span a:hover{
     color:yellow;
@@ -291,4 +293,45 @@ html{
 #fourth-section ul li .left img{
     width:100%;
     height:auto;
+}
+#fifth-section ul li{
+    width:379.8px;
+    position:relative;
+}
+#fifth-section ul li:hover:after{
+    content:"";
+    position:absolute;
+    background: rgba(0,0,0,.5);
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+#fifth-section ul li a img{
+    width:100%;
+    height:100%;
+}
+#fifth-section ul li .content{
+    visibility: hidden;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50% , -50%);
+    z-index:4;
+    color:#fff;
+    text-align:center;
+}
+#fifth-section ul li:hover .content{
+    visibility: visible;
+}
+#fifth-section ul li .content a{
+    transition:all 0.3s;
+    color:#fff;
+    font-size:14px;
+}
+#fifth-section ul li .content p.price{
+    color:#fff;
+    transition:all 0.5s;
+    font-size:14px;
+    font-weight:500;
 }
