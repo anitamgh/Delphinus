@@ -14,6 +14,27 @@ html{
     max-width:1440px;
     padding:0 2rem;
 }
+.header-section{
+    text-align:center;
+    margin:11rem 0 5rem 0;
+}
+.header-section img{
+    width:85px;
+    height:auto;
+    margin-right:2rem;
+}
+.header-section p{
+    margin:0.7rem 0;
+    margin-right:1.2rem;
+}
+.header-section p a{
+    font-size:1.3rem;
+    color:#999;
+    transition:all 0.4s;
+}
+.header-section p a:hover{
+    color:#000;
+}
 #header .top-header{
     border-bottom: 1px solid #f6f6f6;
 }
@@ -226,4 +247,48 @@ html{
 #third-section ul li a .content .shop-now:hover{
     color:#000;
     background-color: #fff;
+}
+#fourth-section ul{
+    justify-content:center;
+}
+#fourth-section ul li{
+    width:380px;
+    height:auto;
+    padding:0 10px 30px 10px;
+}
+#fourth-section ul li .right{
+    padding-left:25px;
+}
+#fourth-section ul li .right .title{
+    color:#000;
+    font-size:2rem;
+}
+#fourth-section ul li .right .title:hover{
+    color:#333;
+}
+#fourth-section ul li .right .price{
+    color:#000;
+    font-size:1.5rem;
+}
+#fourth-section ul li .right .stars{
+    justify-content:flex-start;
+}
+#fourth-section ul li .right .stars span{
+    margin-right:5px;
+}
+#fourth-section ul li .right .stars span a{
+    color:#666;
+}
+#fourth-section ul li .right .stars span a:hover{
+    color:yellow;
+}
+#fourth-section ul li .left{
+    width:45%;
+}
+#fourth-section ul li .right{
+    width:55%;
+}
+#fourth-section ul li .left img{
+    width:100%;
+    height:auto;
 }
