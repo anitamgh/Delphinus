@@ -81,7 +81,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin:30px 0;
+    
 }
 
 #bottom-header .logo img{
@@ -413,4 +413,79 @@ a {
 }
 #free a h1{
     color: #000;
+}
+
+#footer ul.list{
+    display: flex;
+    justify-content: center;
+    grid-gap: 40px;
+}
+#footer ul.list li.information ,
+#footer ul.list li.collections ,
+#footer ul.list li.newsletter{
+    margin: 40px;
+}
+#footer ul.list li.information ul li ,
+#footer ul.list li.collections ul li ,
+#footer ul.list li.newsletter ul li{
+    margin-top: 30px;
+
+}
+#footer ul.list li.information a ,
+#footer ul.list li.collections a{
+    color: #999;
+}
+#footer ul.list li.information a:hover ,
+#footer ul.list li.collections a:hover{
+    color: #000;
+}
+#footer ul.list li.newsletter ul li:first-child{
+    display: flex;
+}
+#footer ul.list li.newsletter ul li:first-child input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 250px;
+}
+
+#footer ul.list li.newsletter ul.brand{
+    display: flex;
+    grid-gap: 30px;
+    font-size: 15px;
+}
+
+#footer ul.list li.newsletter ul.brand a{
+    color: #000;
+}
+#footer ul.list li.newsletter ul li:last-child{
+    text-align: center;
+    margin: 0 10px;
+}
+#footer ul.list li.newsletter ul li:last-child a{
+    color: #000;
+}
+#footer ul.list li.newsletter ul li:last-child p{
+    color: rgb(127, 126, 126);
+
+}
+#footer ul.list li.story{
+    background-image: url(../images/footer.jpg);
+    background-size: cover;
+    width: 640px;
+
+}
+#footer ul.list li.story .article{
+    margin: 60px;
+    color: #fff;
+}
+#footer ul.list li.story .article h2{
+    margin-bottom: 30px;
+}
+#footer ul.list li.story .article p{
+    line-height: 40px;
+    display: none;
+}
+#footer ul.list li.story .article:hover p{
+    display: block;
 }
