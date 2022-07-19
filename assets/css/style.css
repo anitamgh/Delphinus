@@ -204,7 +204,7 @@ html{
     transform:translateY(-50%);
 }
 #third-section .flexbox li{
-    width:33.33%;
+    width:506.34px;
     position:relative;
 }
 #third-section .flexbox li:after{
@@ -218,7 +218,7 @@ html{
 }
 #third-section ul li a img{
     width:100%;
-    height:auto;
+    height:100%;
 }
 #third-section ul li a .content{
     position:absolute;
@@ -299,8 +299,11 @@ html{
     width:100%;
     height:auto;
 }
+#fifth-section ul{
+    justify-content:center;
+}
 #fifth-section ul li{
-    width:379.8px;
+    width:25%;
     position:relative;
 }
 #fifth-section ul li:hover:after{
@@ -349,7 +352,7 @@ html{
     height:318px;
     background-position: center 550px;
     color:#fff;
-    font-size:20px;
+    font-size:23px;
     padding:58px 0 0 30px;
     margin:0;
 }
@@ -422,7 +425,7 @@ html{
     transform:translateY(0);
 }
 #seventh-section li:hover h1{
-    transform:translate(0,-100%);
+    transform:translateY(-100%);
     /* I literally have no clue what I'm doing */
     bottom:-105px;
 }
@@ -444,28 +447,28 @@ html{
     padding-bottom:60px;
 }
 #footer .left{
-    width:67%;
+    width:1017.86px;
     padding:82px 80px 40px 80px;
 }
 #footer .left .list{
-   width:30%;
+   width:257.35px;
 }
 #footer .left .box2{
     margin-left:-5rem;
 }
 #footer .left .box3{
-    width:40%;
+    width:343.14px;
 }
 #footer .left .box h1{
-    letter-spacing:0.2rem;
+    letter-spacing:2px;
     color:#000;
     margin-bottom:35px;
     font-weight:600;
 }
 #footer .left .list h3{
     color:#666;
-    margin:2rem 0;
-    font-size:1.6rem;
+    margin:20px 0;
+    font-size:16px;
     font-weight:100
 }
 #footer .left .list h3:hover{
@@ -521,7 +524,7 @@ html{
     letter-spacing:0.1rem;
 }
 #footer .right{
-    width:33%;
+    width:501.33px;
     overflow: hidden;
 }
 #footer .right .content{
@@ -547,4 +550,114 @@ html{
 }
 #footer .right:hover .content p{
     visibility:visible;
+}
+
+/* responsive: */
+#header .bottom-header .menu .alt-menu , #header .top-header .right .alt-menu{
+    font-size:2rem;
+    display:none;
+}
+#header .bottom-header .menu .alt-menu a , #header .top-header .right .alt-menu a{
+    color:#000;
+}
+@media screen and (max-width:1520px){
+    #footer{
+        justify-content:center;
+        column-gap: 25px;
+    }
+}
+@media screen and (max-width:1250px){
+    #header .top-header .right ul{
+        display:none;
+    }
+    #header .top-header .right .alt-menu{
+        display:block;
+        margin:20px;
+    }
+    #header .top-header .right .alt-menu a i{
+        padding:0 2rem;
+    }
+    #header .bottom-header{
+        display:none;
+    }
+    #hero-section ul{
+        justify-content:center;
+    }
+    #hero-section ul li .content{
+        z-index: 3;
+        position: relative;
+    }
+    #third-section ul{
+        gap:2rem;
+    }
+    #seventh-section ul {
+        justify-content: center;
+        gap: 25px;
+}
+}
+@media screen and (max-width:850px){
+    #fourth-section ul li{
+        display:inline-block;
+        width:50%;
+    }
+    #fourth-section ul li .right {
+        padding-left:0;
+        width:100%;
+    }
+    #fourth-section ul li .left{
+        width:100%;
+    }
+    #sixth-section .top .left h1{
+        height:auto;
+        padding: 70px 43px 55px 43px;
+    }
+    #sixth-section .top .right{
+        width:100%;
+        margin-top:20px;
+    }
+    #sixth-section .top .right form input{
+        width:100%;
+    }
+    #sixth-section .center ul li{
+        width:100%;
+        margin-bottom:30px;
+    }
+    #sixth-section .center ul li img{
+        width:100%;
+        height:auto;
+    }
+    #sixth-section .bottom ul{
+        justify-content: center;
+        gap: 25px;
+    }
+}
+@media screen and (max-width:760px){
+    #footer .left .box{
+        width:100%;
+    }
+    #footer .left .box2 {
+        margin-left:0;
+    }
+    #footer .left{
+        padding: 82px 40px 40px 40px;
+    }
+    #footer .left form input{
+        width:100%;
+    }
+}
+@media screen and (max-width:690px){
+    html{
+        font-size: 8px;
+    }
+    #header .bottom-header .logo{
+        margin-left:-6rem;
+    }
+    #fifth-section ul li{
+        width:50%;
+    }
+}
+@media screen and (max-width:520px){
+#footer .left .box3 {
+    width: 100%;
+}
 }
