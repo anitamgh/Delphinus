@@ -62,6 +62,9 @@ html{
     margin-left:1.5rem;
     font-weight:600;
 }
+#header .top-header .left .logo{
+    display:none;
+}
 #header .top-header .left ul li{
     border-right: 1px solid #f6f6f6;
     padding:2rem 3.7rem;
@@ -418,24 +421,24 @@ html{
 }
 #seventh-section li h1{
     color:#000;
-    font-size:2.5rem;
+    font-size:2.7rem;
+    font-weight:600;
     letter-spacing:0.2rem;
     position:absolute;
     transition:all .2s;
     transform:translateY(0);
 }
 #seventh-section li:hover h1{
-    transform:translateY(-100%);
-    /* I literally have no clue what I'm doing */
-    bottom:-105px;
+    transform:translateY(105px);
 }
 #seventh-section ul li p{
     color:#999;
     font-size:16px;
     margin-bottom:3rem;
     position:absolute;
-    top:-35px;
-    left:200px;
+    top:0px;
+    left:37%;
+    transform:translateY(-105px);
     transition:all 0.3s;
 }
 #seventh-section ul li:hover p{
@@ -503,7 +506,7 @@ html{
 #footer .left .icons li a{
     color:#000;
     padding-right:42px;
-    font-size:1.3rem;
+    font-size:1.35rem;
 }
 #footer .left .icons li a:hover{
     color:#333;
@@ -511,8 +514,9 @@ html{
 #footer .left p.big{
     text-align:center;
     color:#666;
-    font-size:1.5rem;
-    letter-spacing:0.1rem;
+    font-size:1.7rem;
+    letter-spacing:0.05rem;
+    margin-top:45px;
 }
 #footer .left p.big span{
     color:#333;
@@ -520,7 +524,7 @@ html{
 #footer .left p.small{
     text-align:center;
     color:#333;
-    font-size:1.3rem;
+    font-size:1.5rem;
     letter-spacing:0.1rem;
 }
 #footer .right{
@@ -567,6 +571,17 @@ html{
     }
 }
 @media screen and (max-width:1250px){
+    #header .top-header .left .logo{
+        display:block;
+        margin:20px;
+    }
+    #header .top-header .left .logo img{
+        width:170px;
+        height:auto;
+    }
+    #header .top-header .left ul{
+        display:none;
+    }
     #header .top-header .right ul{
         display:none;
     }
@@ -583,6 +598,9 @@ html{
     #hero-section ul{
         justify-content:center;
     }
+    #hero-section ul li:first-child{
+        display:none;
+    }
     #hero-section ul li .content{
         z-index: 3;
         position: relative;
@@ -594,6 +612,57 @@ html{
         justify-content: center;
         gap: 25px;
 }
+}
+@media screen and (max-width:1130px){
+    #sixth-section .top .right{
+        margin-top:30px;
+    }
+    #sixth-section .center ul li:nth-child(1), #sixth-section .center ul li:nth-child(2){
+        padding-right:0;
+    }
+    #sixth-section .center ul li {
+        width: 33%;
+    }
+    #sixth-section .center ul li img {
+        height: auto;
+    }
+    #sixth-section .top .right {
+        width: 100%;
+        margin-top: 20px;
+    }
+    #sixth-section .top .right form input{
+        width:100%;
+    }
+    #sixth-section .top .left {
+        width: 100%;
+    }
+    #sixth-section .top .left h1{
+        height:auto;
+        padding: 70px 43px 55px 43px;
+    }
+}
+@media screen and (max-width:985px){
+    #third-section ul {
+        gap:0;
+    }
+    #third-section ul li:nth-child(3){
+        display:none;
+    }
+    #third-section .flexbox li{
+        width:50%;
+    }
+    #footer .left .box{
+        width:100%;
+    }
+    #footer .left .box2 {
+        margin-left:0;
+    }
+    #footer .left{
+        padding: 82px 40px 40px 40px;
+    }
+    #footer .left form input{
+        width:100%;
+    }   
 }
 @media screen and (max-width:850px){
     #fourth-section ul li{
@@ -607,17 +676,6 @@ html{
     #fourth-section ul li .left{
         width:100%;
     }
-    #sixth-section .top .left h1{
-        height:auto;
-        padding: 70px 43px 55px 43px;
-    }
-    #sixth-section .top .right{
-        width:100%;
-        margin-top:20px;
-    }
-    #sixth-section .top .right form input{
-        width:100%;
-    }
     #sixth-section .center ul li{
         width:100%;
         margin-bottom:30px;
@@ -629,20 +687,6 @@ html{
     #sixth-section .bottom ul{
         justify-content: center;
         gap: 25px;
-    }
-}
-@media screen and (max-width:760px){
-    #footer .left .box{
-        width:100%;
-    }
-    #footer .left .box2 {
-        margin-left:0;
-    }
-    #footer .left{
-        padding: 82px 40px 40px 40px;
-    }
-    #footer .left form input{
-        width:100%;
     }
 }
 @media screen and (max-width:690px){
