@@ -96,7 +96,13 @@ a {
     width: 170px;
     height: auto;
 }
+#bottom-header .mobile-menu {
+   display: none;
 
+}
+#bottom-header .mobile{
+    display: none;
+}
 #bottom-header .menu ul{
     display: flex;
     flex-direction: row;
@@ -153,7 +159,7 @@ a {
 #product ul.chair:after{
     position: absolute;
     width: 100%;
-    height: 55%;
+    height: 56%;
     content: "";
     background: #eeeded;
     
@@ -164,6 +170,8 @@ a {
     grid-gap: 90px;
     text-align: center;
     position: relative;
+    flex-wrap: wrap;
+    
 }
 
 #product ul.chair li{
@@ -323,6 +331,7 @@ a {
 #new-arrivals .new ul.img{
    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 #new-arrivals .new ul.img li img{
     width: 370.4px;
@@ -368,6 +377,7 @@ a {
     display: flex;
     justify-content: center;
     grid-gap: 30px;
+    flex-wrap: wrap;
 }
 #about-us .top .left{
     background-image: url(../images/about.webp);
@@ -417,6 +427,7 @@ a {
     justify-content: center;
     grid-gap: 30px;
     margin-top: 30px;
+    flex-wrap: wrap;
 
 }
 #about-us .about .bottom ul li img{
@@ -427,6 +438,7 @@ a {
     justify-content: center;
     grid-gap: 75px;
     margin: 100px 0;
+    flex-wrap: wrap;
 }
 #free{
     display: flex;
@@ -434,6 +446,7 @@ a {
     flex-direction: row;
     grid-gap: 30px;
     background: #e2e1e1;
+    flex-wrap: wrap;
 }
 #free .left ,
 #free .right{
@@ -444,15 +457,20 @@ a {
     color: #000;
     position: relative;
     width: 550px;
+    height: 160px;
 }
 #free .left:hover span ,
 #free .right:hover span{
     display: block;
     color:#999
 }
+#free h1{
+    margin-top:40px;
+}
 #free .left:hover h1 ,
 #free .right:hover h1{
     display: none;
+   
 }
 #free span{
     display:none;
@@ -472,11 +490,13 @@ a {
     display: flex;
     justify-content: center;
     grid-gap: 40px;
+    flex-wrap: wrap;
 }
 #footer ul.list li.information ,
 #footer ul.list li.collections ,
 #footer ul.list li.newsletter{
     margin: 40px;
+    width: 160px;
 }
 #footer ul.list li.information ul li ,
 #footer ul.list li.collections ul li ,
@@ -527,6 +547,7 @@ a {
     background-image: url(../images/footer.jpg);
     background-size: cover;
     width: 640px;
+    height:450px;
 
 }
 #footer ul.list li.story .article{
@@ -542,5 +563,52 @@ a {
 }
 #footer ul.list li.story .article:hover p{
     display: block;
+    
+}
+@media screen and (max-width:1000px){
+    #bottom-header .menu{
+        display: none;
+    }
+    #bottom-header .mobile-menu {
+        display: block;
+    
+    }
+    #product ul.chair li:last-child{
+        display: none;
+    }
+    #shop {
+        display:flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+}
+@media screen and (max-width:750px){
+    #top-header{
+        display: none;
+    }
+    #bottom-header .mobile{
+        display: block;
+    }
+    #bottom-header .search{
+        display: none;
+    }
+    #product ul.chair li:nth-child(2){
+        display: none;
+    }
+    #product ul.chair{
+        justify-content: center;
+    }
+    #about-us .top .right ,
+    #about-us .top .left ,
+    #footer ul.list li.newsletter{
+        width: 70%;
+    }
+    #free span{
+        width: 550px;
+      
+    }
+  
     
 }
